@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: #fff;
+  background-color: #000;
   position: fixed;
   height: 100%;
   top: 0px;

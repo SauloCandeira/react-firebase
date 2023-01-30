@@ -25,7 +25,7 @@ export default function AddConcurso() {
     }
 
 
-    function handleSubmi(e) {
+    function handleSubmit(e) {
         e.preventDefault()
         if(formData === null){
             return
@@ -45,7 +45,7 @@ export default function AddConcurso() {
         <div>
             <h4> AddConcurso</h4>
 
-            <form onSubmit={handleSubmi}>
+            <form onSubmit={handleSubmit}>
                 <label htmlFor="nome"> Nome do Concurso </label>
                 <input type="text" id="nome" value={nome} onChange={onChange} />
                 <label htmlFor="nome"> Data do Concurso </label>

@@ -5,11 +5,14 @@ import { db } from '../../lib/init-firebase'
 
 
 export type CountDownProps = {
-  data: Date
+  data: Date,
+  title: String
 }
 
-export default function Countdown2(data : CountDownProps ) {
+export default function Countdown2({data, title }: CountDownProps ) {
 
+  console.log('data',data)
+  console.log('title', title)
   // console.log('data props', data.data)
   // const [year, month, day] = data.split('/');
   // console.log(data.data)
@@ -53,7 +56,7 @@ export default function Countdown2(data : CountDownProps ) {
 
   useEffect(() => {
 
-    const target = new Date(data.data);
+    const target = new Date(data);
     // const target = new Date("12/31/2024 23:59:59");
     console.log('target', target)
 
@@ -85,6 +88,7 @@ export default function Countdown2(data : CountDownProps ) {
 
   return (
     <>
+      <h1> {title} </h1>
       <div className="timer-wrapper">
         <div className="timer-inner">
           <div className="timer-segment">

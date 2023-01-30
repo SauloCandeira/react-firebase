@@ -3,6 +3,10 @@
 1º - npm install firebase
 2º - npm install react-router-dom
 3º - npm install styled-components
+4º - npm install -D tailwindcss postcss autoprefixer
+
+# INIT
+1º - npx tailwindcss init -p
 
 
 
