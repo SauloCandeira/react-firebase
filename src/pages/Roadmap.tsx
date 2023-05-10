@@ -13,7 +13,7 @@ export function Roadmap() {
 
     useEffect(() => {
         getDates()
-    }, [dates])
+    }, [])
 
     function getDates() {
         const concursoColletonRef = collection(db, 'todos' )
